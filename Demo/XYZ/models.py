@@ -12,6 +12,7 @@ class Chaivarity(models.Model):
      image=models.ImageField(upload_to='chais/')
      date=models.DateTimeField(default=timezone.now)
      type=models.CharField(max_length=3,choices=VARIETY)
+     desc=models.TextField(default='')
      
      def __str__(self):
           return self.name

@@ -23,6 +23,11 @@ abc.html
      <h3>{{chai.name}}</h3>
      <h3>{{chai.type}}</h3>
      <h3>{{chai.date}}</h3>
+     <a href="{% url 'chai_detail' chai.id %}">
+          <button type="button">
+               {{chai.type}}-{{chai.id}}
+          </button>
+     </a>
 
 </div>
 {% endfor %}
