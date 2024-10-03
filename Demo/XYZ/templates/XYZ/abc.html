@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+
+
+{% block title %}
+abc.html     
+
+{% endblock %}
+
+
+
+{% block content %}
+<h1>abc.html </h1>
+<p>this is abc.html</p>
+
+<div class="container">
+<div class="row" >
+
+
+{% for chai in chais  %}
+<div class="chai_item" >
+     <img style="display:flex; justify-content:center ;height:300px;" src="{{chai.image.url}}" alt="">
+     <h3>{{chai.name}}</h3>
+     <h3>{{chai.type}}</h3>
+     <h3>{{chai.date}}</h3>
+
+</div>
+{% endfor %}
+</div>
+</div>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
