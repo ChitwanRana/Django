@@ -20,5 +20,6 @@ from . import views
 urlpatterns = [
     path('',views.abc,name='abc'),  # now url for app is localhost:8000/XYZ and for project  is 8000 (abc is by default)
     path('abcd/',views.abcd,name='abcd'),   # localhost:8000/XYZ/abcd
-    path('<int:chai_id>/',views.chai_detail,name='chai_detail')  # if any integer come then call chai_details view
+    path('<int:chai_id>/',views.chai_detail,name='chai_detail'),  # if any integer come then call chai_details view
+    path('store/',views.chai_store_view,name='chai_store_view'),
 ]

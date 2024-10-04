@@ -14,4 +14,8 @@ def abcd(request):
 
 def chai_detail(request,chai_id):
      chai=get_object_or_404(Chaivarity,pk=chai_id)
-     return render(request,'detail.html',{'chai':chai})
+     return render(request,'XYZ/detail.html',{'chai':chai})
+
+
+def chai_store_view(request):
+     return render(request,'XYZ/store.html')
